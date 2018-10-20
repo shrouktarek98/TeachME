@@ -1,0 +1,101 @@
+.teacher{
+    padding: 20px 0 30px;
+}
+.teacher .container-fluid .text h3{
+    color: #583378;
+    font-weight: 700;
+}
+.teacher .container-fluid .text h2{
+    text-align: center;
+    word-wrap: break-word;
+    color: #583378;
+    margin: 30px auto;
+    max-width: 650px;
+    font-weight: 500;
+    font-family: Abril Text,Droid Serif,serif;
+}
+@media(max-width: 767.5px){
+    .teacher .container-fluid .text h2{
+        font-size: 20px;
+    }
+}
+.teacher .container-fluid .carousel{
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+@media(max-width: 767.5px){
+    .teacher .container-fluid .carousel{
+        text-align: center
+    }
+}
+.teacher .container-fluid  .info{
+    margin: 30px 10px 20px;
+}
+.teacher .container-fluid .carousel-control-next, .carousel-control-prev{
+    width: 50px;
+    height: 50px;
+    transform: translateY(170px);
+    margin: 0 auto;
+    
+} 
+@media(max-width: 767.5px){
+    .teacher .container-fluid .carousel-control-next, .carousel-control-prev{
+        transform: translateY(100px);
+    } 
+}
+@media(max-width: 480.5px){
+    .teacher .container-fluid .carousel-control-next, .carousel-control-prev{
+        transform: translateY(60px);
+    } 
+}
+@media(max-width: 320.5px){
+    .teacher .container-fluid .carousel-control-next, .carousel-control-prev{
+        transform: translateY(35px);
+    } 
+    
+}
+@media(max-width: 250.5px){
+    .teacher .container-fluid .carousel-control-next, .carousel-control-prev{
+        transform: translateY(20px);
+    } 
+}
+.teacher .container-fluid img{
+    width: 100%;
+    display: inline-flex;
+}
+.teacher .container-fluid .info h6{
+    
+    color: #583378;
+    
+}
+.teacher .container-fluid .info p{
+  color:rgba(56,49,68,.5);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.teacher .container-fluid .info a{
+    float: right;
+    text-decoration: none;
+    padding: 7px 25px;
+    border: 2px solid #1cba98;
+    color: #1cba98;
+    border-radius: 30px;
+}
+.teacher .container-fluid .info a:hover{
+    background-color: #1cba98;
+    color: #ffffff;
+}
+@media(max-width: 767.5px){
+    .teacher .container-fluid .info a{
+        text-align: center;
+        float: none;
+    }
+}
+@media(max-width: 480.5px){
+    .teacher .container-fluid .info a{
+        padding: 2px  8px;
+    }
+    .teacher .container-fluid .info p{
+        font-size: 13px;
+    }
+}

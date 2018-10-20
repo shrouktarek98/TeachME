@@ -1,0 +1,134 @@
+
+html{
+    font-family: Pluto Sans,Helvetica,Arial,sans-serif;
+}
+.head{
+    position: relative;
+    width: 100%;
+    height: 745px;
+    
+}
+ header{
+    z-index: 2;
+    margin: 0 auto;
+    padding: 20px 30px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0;
+}
+.he{
+    background-color: #fff;
+}
+header .name{
+    float: left;
+    font-size: 25px;
+    
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.h1 .name{
+    color: #1cba98;
+}
+.h2 .name{
+    color: #fff;
+}
+header div{
+    float: right ;
+    font-size: 17px;
+}
+header div .button{
+    padding: 7px 26px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 25px;
+    text-decoration: none;
+}
+.h1 div .button{
+    border: 2px solid  #583378;
+    color: #583378;
+}
+.h1 div .button:hover{
+    border: 2px solid #583378;;
+    color: #fff;
+    background: #583378;;
+}
+.h1 div .signin{
+    color: #1cba98;
+}
+.h2 div .button{
+    border: 2px solid  #fff;
+    color: #fff;
+}
+.h2 div .button:hover{
+    border: 2px solid #fff;
+    color: #1cba98;
+    background: #fff;;
+}
+.h2 div .signin{
+    color: #fff;
+}
+header div .signin{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.overlay{
+    background-color: #aaa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.contentHead{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+}
+.contentHead h1{
+    text-align: center;
+    margin: 200px auto 40px;
+    font-size: 60px;
+    color: #fff;
+   
+}
+.contentHead p{
+    font-family: Abril Text,Droid Serif,serif;
+    text-align: center;
+    margin: 0 auto 70px;
+    font-size: 30px;
+    color: #fff;
+}
+@media(max-width:991.5px){
+    .contentHead h1{
+        font-size: 30px;
+    }
+    .contentHead p{
+        font-size: 20px;
+    }
+}
+.contentHead a{
+    text-decoration: none;
+    font-family: Pluto Sans,Helvetica,Arial,sans-serif;
+    padding: 13px 26px;
+    color: #1cba98;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+.contentHead a:hover{
+    background-color: #1cba98;
+    color: #fff;
+}
