@@ -1,0 +1,40 @@
+<div class="first">
+    <div class="container">
+        <a href="#" class="teachme">TeachMe</a>
+    </div>
+</div>
+<form #formdata="ngForm" (ngSubmit)="onClickSubmit(formdata.value)" class="details">
+    <div class="container">
+        <div class="inpt">
+            <div>
+                <input #email="ngModel" name="Email" [(ngModel)]="Email" type="email" class="form-control" placeholder="Email" required>
+                <div class="alert alert-danger" *ngIf="email.touched && email.invalid">
+                    <div *ngIf="email.errors.required">Email is required.</div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <input #password="ngModel" name="Password" [(ngModel)]="Password" type="password" class="form-control" placeholder="Password" required>
+                <div class="alert alert-danger" *ngIf="password.touched && password.invalid">
+                    <div *ngIf="password.errors.required">Password is required.</div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group divbttnsignin">
+            <button class="bttnsignin" type="submit" [disabled]="!formdata.valid">Save</button>
+        </div>
+    </div>
+</form>
+<div class="ftr">
+    <div class="container">
+        <a [routerLink]="['/signup']" class="signup" id='signup'>Create Account</a>
+
+    </div>
+</div>
+<div class="lst">
+    <div class="container">
+
+    </div>
+</div>

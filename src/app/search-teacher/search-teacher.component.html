@@ -1,0 +1,115 @@
+<section class="searchTeacher">
+
+    <div class="headsearch">
+        <nav id="nav">
+            <div class="left" id="cancal" style="display:none"><a (click)='apply()' class="cancel">CANCEL</a></div>
+            <div class="left" id="leftnav">
+                <a href="#" class="TeachMe" id="TeachMe">TeachMe</a>
+                <div id="divforlink">
+                    <a href="#" class="Career" id="career">career</a> /
+                    <a [routerLink]="['/items']" class="Lesson" id="lesson">lessons</a>
+                </div>
+            </div>
+            <a [routerLink]="['/signin']" class="right signin" id="rightnav">Sgin in</a>
+            <div class="right" id="apply" style="display:none"><a (click)='apply()' class="apply">APPLY</a></div>
+        </nav>
+        <div class="informationhead" id="informationhead">
+            <h1>Lesson Skills Teachers</h1>
+            <p>Find the right expert for customized, 1-on-1 lessons over live video chat.</p>
+        </div>
+        <div class="searchhead" id="searchhead">
+            <input type="search" name="searchuser" [(ngModel)]="searchuser" placeholder="search" id="search">
+            <div class="filter" id="filter" (click)='filt()'>Filter</div>
+        </div>
+        <div class="serch2" id="search2" style="display:none">
+
+        </div>
+    </div>
+
+
+    <div class="bodysearch">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 drop" id="drop">
+                    <div class="time row t1">
+                        <div class="col-10">
+                            <h6>Availability</h6>
+                            <span>Any day, Any time</span>
+                        </div>
+                        <div class="col-2">
+                            <img src="../../src/app/img/arow.PNG">
+                        </div>
+                    </div>
+                    <div class="time row t2">
+                        <div class="col-10">
+                            <h6>Price Range</h6>
+                            <span>$10-$220 Per Lesson</span>
+                        </div>
+                        <div class="col-2">
+                            <img src="../../src/app/img/arow.PNG">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 dropover"></div>
+
+                <div class="col-lg teacherinform" id="teacherinform">
+                    <h5>Showing 20 lessons from 18 teachers</h5>
+                    <div class="inform" *ngFor="let item of users |search : 'firstName' : searchuser">
+
+                        <div class="first">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="img">
+                                        <img src="../../../src/app/img/person.PNG">
+                                    </div>
+                                    <div class="data">
+                                        <a class="nameperson" [routerLink]="['/viewprofile',item.id]">
+                                            {{item.firstName}}</a><br>
+                                        <a class="carr" [routerLink]="['/viewprofile',item.id]">Career And Life Coaching</a><br>
+                                        <img src="../../src/app/img/star.PNG">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="conect">
+                                        <a class="massage" href="#">massage</a>
+                                        <a [routerLink]="['/viewprofile',item.id]" class="view">View Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="second">
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4><a href="#">career / lesson</a></h4>
+                                    <p>
+                                        It is my goal not only to prepare individuals for their next job, but to help them understand what skills will be necessary to get better jobs in the future. Job seekers learn how not get screened out by the many methods...
+                                    </p>
+
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="ticket">
+                                        <div class="price">
+                                            <span>25 Min $45</span><br>
+                                            <span>25 Min $45</span>
+                                        </div>
+                                        <div class="request">
+                                            <a href="#">Request a Time</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6><a [routerLink]="['/viewprofile']">more</a></h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

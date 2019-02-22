@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { ServicesService } from './../services.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fottor.component.css']
 })
 export class FottorComponent implements OnInit {
-
-  constructor() { }
-
+  categories: any;
+  items:any;0
+  constructor( private route:Router,private servicesService:ServicesService) {
+    this.servicesService.get_All_Categories().subscribe(Response => {
+      this.categories = Response;
+    });
+    this.servicesService.get_All_Items().subscribe(Response => {
+      this.items = Response;
+    });
+   
+  }
   ngOnInit() {
   }
 

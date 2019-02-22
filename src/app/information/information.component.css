@@ -1,75 +1,88 @@
-.informationimg{
+.informationimg {
     background: #1cba98;
     color: #fff;
     overflow: hidden;
     position: relative;
-    
 }
-.information .informationimg img{
+
+.information .informationimg img {
     max-width: 100%;
     max-height: 100%;
     margin-right: 20px;
     border-radius: 0%;
 }
-.information .text{
+
+.information .text {
     text-align: center;
     font-size: 22px;
-    margin: 10% auto;
+    margin: 10% auto 2%;
 }
-@media(max-width:991.5px){
-    .information .informationimg{
+
+.information h6 {
+    margin: 0% 2% 1%;
+    text-align: left;
+}
+
+@media(max-width:991.5px) {
+    .information .informationimg {
         text-align: center;
     }
-    .information .container-fluid .informationimg .col-lg-4{
+    .information .container-fluid .informationimg .col-lg-4 {
         text-align: center;
     }
-    .information .informationimg img{
+    .information .informationimg img {
         width: 50%;
         margin-right: 0 auto;
         border-radius: 50%;
-       
-        
     }
 }
-.information .informationtext{
+
+.information .informationtext {
     background-color: #1fac8f;
     color: #fff;
     overflow: hidden;
     position: relative;
 }
-.information .informationtext .col-lg{
+
+.information .informationtext .col-lg {
     font-size: 19px;
     margin: 30px 20px 20px;
 }
-.information .informationtext .col-lg h5{
+
+.information .informationtext .col-lg h5 {
     margin: 13px 0 0px;
 }
-@media(max-width:991.5px){
-    .information .informationtext .col-lg{
+
+@media(max-width:991.5px) {
+    .information .informationtext .col-lg {
         font-size: 17px;
         margin: 5px 20px 10px;
         padding-top: 15px;
     }
 }
-.information .informationboth{
+
+.information .informationboth {
     background-color: #fafafa;
 }
-.information .informationboth .col-lg{
+
+.information .informationboth .col-lg {
     margin: 5px 10px 10px;
     padding-top: 15px;
     text-align: center;
 }
-.information .informationboth img{
+
+.information .informationboth img {
     max-width: 80%;
     max-height: 80%;
     margin: 10px 0 10px;
 }
-.information .informationboth p{
+
+.information .informationboth p {
     position: relative;
     text-align: center;
     padding-top: 10px;
     word-wrap: break-word;
-    color: rgba(56,49,68,.5);
+    color: rgba(56, 49, 68, .5);
     font-size: 15px;
     font-weight: 500;
 }

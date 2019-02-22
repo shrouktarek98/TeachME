@@ -1,0 +1,110 @@
+/*Starting of first div*/
+
+.first {
+    height: 50px;
+}
+
+.container {
+    width: 750px;
+    margin: auto;
+}
+
+.teachme {
+    text-decoration: none;
+    color: #1CBA98;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.SignIn {
+    text-decoration: none;
+    color: #9B98A1;
+    font-size: 20px;
+    float: right;
+}
+
+.first .container p {
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+/*End of first div*/
+
+
+/*start of details div*/
+
+.details {
+    background-color: #F3FCFA;
+    height: auto;
+    margin-top: 40px;
+}
+
+.details input {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
+    height: 5px;
+    font-size: 17px;
+    font-weight: 100;
+    font-style: italic;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: black;
+    font-weight: 400;
+}
+
+.divbttnsignin {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.divbttnsignin .bttnsignin {
+    background: none;
+    padding: 8px 20px;
+    border-radius: 2rem;
+    color: #ff530f;
+    text-align: center;
+    min-width: 9rem;
+    width: auto;
+    border: 2px solid #ff530f;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+/*end of details div*/
+
+
+/*start of footer div*/
+
+.ftr {
+    text-align: center;
+    margin: 20px;
+}
+
+.ftr input:hover {
+    cursor: pointer;
+}
+
+.ftr a {
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+
+/*start of footer div*/
+
+.lst {
+    background-color: #383144;
+    height: 50px;
+    margin-top: 204px;
+    width: 100%;
+}

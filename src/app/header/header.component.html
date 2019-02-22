@@ -1,25 +1,53 @@
-<section class="header"  >
-  <div class="head"></div>
-  <header id='header' class='h2'>
-      <a href="#" class='name' id="name">Savvy</a>
-      <div class="nav">
-          <a href="#" class="button" id='buttonhead'>TEACH</a>
-          <a routerLink="/items" routerLinkActive="active"  class="signin" id='signin'>Sign In</a>
-      </div>
-  </header>
-  <div class="contentHead">
-      <h1>
-          We can learn a lot
-          <br>
-          from each other
-      </h1>
-      <p>
-          Get personal lessons with amazing teachers
-          <br>
-          over live, one-to-one video.
-      </p>
-      <a href="#" id='findyorteacher'>Find Your Teacher</a>
-  </div>
-  <div class="overlay"></div>
-  <script src="../shrouk.js"></script>
+<section class="header">
+    <div class="head" id="head"></div>
+
+    <header id='header' class='h2'>
+
+        <a href="#" class='name' id="name">TeachME</a>
+        <div class="nav">
+
+            <a [routerLink]="['/header']" class="button" id='buttonhead'>TEACH</a>
+            <a [routerLink]="['/signin']" class="signin" id='signin'>SignIn</a>
+
+        </div>
+
+    </header>
+    <div class="contentHead">
+        <h1>
+            We can learn a lot
+            <br> from each other
+        </h1>
+        <p>
+            Get personal lessons with amazing teachers
+            <br> over live, one-to-one video.
+        </p>
+        <a [routerLink]="['/searchteacher']" id='findyorteacher'>Find Your Teacher</a>
+    </div>
+    <div class="overlay" id="overlay">
+
+    </div>
+    <img class="imgg" src="../../src/app/items/img/presentation-skills.jpg">
+    <!-- <video src="../../src/app/img/TeachMe.MP4" width="100%" height="100%" ></video> -->
+
+
+
+    <script src="../shrouk.js"></script>
 </section>
+
+<app-career></app-career>
+<app-works></app-works>
+<app-information></app-information>
+<app-teacher></app-teacher>
+<section class="submitt">
+    <div class="containerr">
+        <h1>Get access to the most effective way to learn</h1>
+        <p>Sign up to check out Savvy’s one-to-one teachers.</p>
+        <button [routerLink]="['/signup']" id="signup" (click)='form() '>Sign up</button>
+        <!-- <form class="col-lg" id="form">
+            <input type="text" placeholder="First Name" name="first_name" id="frName" (focus)='focus( "frName") ' (blur)='blur( "frName") '>
+            <input type="email" placeholder="Email" name="email" id="mail" (focus)='focus( "mail") ' (blur)='blur( "mail") '>
+            <button>Submit</button>
+        </form> -->
+    </div>
+</section>
+<app-fottor></app-fottor>

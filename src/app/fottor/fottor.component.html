@@ -1,64 +1,25 @@
 <section class="fotter">
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-sm-3">
-              <ul class="list-unstyled">
-                  <h6><a href="#">Academics</a></h6>
-                  <li><a href="#">Applications and Exams</a></li>
-                  <li><a href="#">Math</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3">
-              <ul class="list-unstyled">
-                  <h6><a href="#">Arts</a></h6>
-                  <li><a href="#">Acting and Performing</a></li>
-                  <li><a href="#">Art and Photography</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3">
-              <ul class="list-unstyled">
-                  <h6><a href="#">Business</a></h6>
-                  <li><a href="#">Communication</a></li>
-                  <li><a href="#">Data and Analytics</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3">
-              <ul class="list-unstyled">
-                  <h6><a href="#">Coding</a></h6>
-                  <li><a href="#">C-Languages</a></li>
-                  <li><a href="#">HTML and CSS</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3">
-              <ul class="list-unstyled">
-                  <h6><a href="#">Languages</a></h6>
-                  <li><a href="#">Accent Reduction</a></li>
-                  <li><a href="#">All Languages</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3">
-              <ul class="list-unstyled">
-                  <h6><a href="#">Mind and body</a></h6>
-                  <li><a href="#">Fitness</a></li>
-                  <li><a href="#">Food and Cooking</a></li>
-              </ul>
-          </div>
-          <div class="col-sm-3">
-              <ul class="list-unstyled">
-                  <h6><a href="#">Music</a></h6>
-                  <li><a href="#">Guitar</a></li>
-                  <li><a href="#">Music Production</a></li>
-              </ul>
-          </div>
-      </div>
-      <div class=" teachme">
-          <div class="teach row">
-              <div class="col-md">
-                <h1><a href="#">TeachMe</a></h1>
-              </div>
-              <div class="col-md">
-                <ul class="list-unstyled">
-                
+    <div class="container-fluid">
+        <div class="row">
+
+            <ul class="list-unstyled col-md-2 categories" *ngFor="let cat of categories">
+
+                <a [routerLink]="['/items',cat.id]" (click)="refresh()" class="catname">{{cat.name}}</a>
+                <div *ngFor="let item of items">
+                    <a *ngIf="item.categoryId==cat.id" [routerLink]="['/searchteacher']" class="itemname">{{item.name}}</a>
+                </div>
+            </ul>
+
+
+        </div>
+        <div class=" teachme">
+            <div class="teach row">
+                <div class="col-md">
+                    <h1><a href="#">TeachMe</a></h1>
+                </div>
+                <div class="col-md">
+                    <ul class="list-unstyled">
+
                         <h6><a href="#">Company</a></h6>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -66,18 +27,24 @@
                         <li><a href="#">How It Works</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
-              </div>
-              <div class="col-md">
-                <a href="#" class="button">For Business</a>
-              </div>
-              
-              <div class="logi col-md">
-                  <div class="face"><a href="#"><img src="../../src/app/img/face.PNG" alt="face"></a></div>
-                  <div class="twiter"><a href="#"><img src="../../src/app/img/twiter.PNG" alt="twiter"></a></div>
-                  <div class="youtype"><a href="#"><img src="../../src/app/img/youtype.PNG" alt="youtype"></a></div>
-              </div>
-          </div>
-          
-      </div>
-  </div>
+                </div>
+                <div class="col-md">
+                    <a href="#" class="button">For Business</a>
+                </div>
+
+                <div class="logi col-md">
+                    <div class="face">
+                        <a href="#"><img src="../../src/app/img/face.PNG" alt="face"></a>
+                    </div>
+                    <div class="twiter">
+                        <a href="#"><img src="../../src/app/img/twiter.PNG" alt="twiter"></a>
+                    </div>
+                    <div class="youtype">
+                        <a href="#"><img src="../../src/app/img/youtype.PNG" alt="youtype"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>

@@ -1,68 +1,90 @@
-.fotter{
+.fotter {
     background-color: #583378;
     padding: 50px 20px 50px;
     z-index: 1;
     text-align: center;
 }
-.fotter .container-fluid .row .col-sm-3{
-    margin-bottom: 50px;
+
+.fotter .container-fluid .row .categories {
+    margin-bottom: 30px;
 }
-.fotter .container-fluid a{
+
+.fotter .container-fluid a {
     text-decoration: none;
 }
-.fotter .container-fluid ul h6 a{
+
+.fotter .container-fluid ul .catname {
     color: #fff;
     margin-bottom: 20px;
-    
+    font-size: 20px;
 }
-.fotter .container-fluid ul h6 a:hover{
-    color: hsla(0,0%,100%,.5);
+
+.fotter .container-fluid ul .itemname {
+    color: hsla(0, 0%, 100%, .5);
+    font-size: 18px;
+    cursor: pointer;
 }
-.fotter .container-fluid ul li a:hover{
+
+.fotter .container-fluid ul .catname:hover {
+    color: hsla(0, 0%, 100%, .5);
+}
+
+.fotter .container-fluid ul .itemname:hover {
     color: #fff;
 }
-.fotter .container-fluid ul li a{
-    color: hsla(0,0%,100%,.5);
+
+.fotter .container-fluid ul li a {
+    color: hsla(0, 0%, 100%, .5);
 }
-@media(min-width: 991.5px){
-    .fotter{
+
+@media(min-width: 991.5px) {
+    .fotter {
         padding: 250px 20px 50px;
     }
 }
-@media(min-width: 576.5px){
-    .fotter{
+
+@media(min-width: 767.5px) {
+    .fotter {
         text-align: inherit;
     }
 }
-.fotter .container-fluid .teachme{
+
+.fotter .container-fluid .teachme {
     text-align: center;
+    margin-top: 30px;
 }
-.fotter .container-fluid .teach{
+
+.fotter .container-fluid .teach {
     width: 100%;
     text-align: center;
     flex-wrap: wrap;
 }
 
-@media(max-width: 991.5){
-    .fotter .container-fluid .teach{
+@media(max-width: 991.5) {
+    .fotter .container-fluid .teach {
         margin: 0 auto;
         text-align: left;
     }
 }
-.fotter .container-fluid .teach .col-md{
+
+.fotter .container-fluid .teach .col-md {
     margin-bottom: 20px;
 }
-.fotter .container-fluid .teachme .teach h1 a{
+
+.fotter .teachme .teach h1 a,
+.fotter .teachme .teach h6 a {
     color: #fff;
-    
 }
-.fotter .container-fluid .teachme .teach h1{
+
+.fotter .container-fluid .teachme .teach h1 {
     margin-bottom: 20px;
 }
-.fotter .container-fluid .teachme .teach li{
+
+.fotter .container-fluid .teachme .teach li {
     margin-bottom: 8px;
 }
-.fotter .container-fluid .teachme .teach .button{
+
+.fotter .container-fluid .teachme .teach .button {
     background-color: #fff;
     color: #583378;
     padding: 7px 25px;
@@ -72,7 +94,8 @@
     border: none;
     cursor: pointer;
 }
-.fotter .container-fluid .teachme .teach .logi div{
+
+.fotter .container-fluid .teachme .teach .logi div {
     width: 35px;
     height: 35px;
     text-align: center;
@@ -80,10 +103,9 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
-    
 }
 
-.fotter .container-fluid .teachme .teach .logi div a img{
+.fotter .container-fluid .teachme .teach .logi div a img {
     transform: translateY(4px);
     -webkit-transform: translateY(4px);
     -moz-transform: translateY(4px);
@@ -91,6 +113,7 @@
     height: 70%;
     margin: 0px auto;
 }
-.fotter .container-fluid .teachme .teach .logi .youtype{
+
+.fotter .container-fluid .teachme .teach .logi .youtype {
     margin-right: 0px;
 }

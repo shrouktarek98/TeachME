@@ -1,0 +1,374 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.searchTeacher {
+    /* min-height: 754px; */
+    height: 5000px;
+    background-color: #f3f3f3;
+}
+
+.searchTeacher .headsearch nav {
+    background-color: #1cba98;
+    padding: 10px 40px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.searchTeacher .headsearch a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.searchTeacher .headsearch #divforlink {
+    font-size: 14px;
+}
+
+.searchTeacher .headsearch .TeachMe {
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.searchTeacher .headsearch .cancel,
+.searchTeacher .headsearch .apply {
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.searchTeacher .headsearch .right {
+    font-weight: 600;
+    display: inline-flex;
+    float: right;
+    cursor: pointer;
+}
+
+.searchTeacher .headsearch .left {
+    display: inline-flex;
+    float: left;
+}
+
+.searchTeacher .headsearch .informationhead {
+    padding: 60px 0 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #1cba98;
+    color: #fff;
+    display: block;
+}
+
+.searchTeacher .headsearch .informationhead h1 {
+    text-transform: capitalize;
+    max-width: 90%;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.searchTeacher .headsearch .informationhead p {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 17.5px;
+    font-weight: 490;
+    text-transform: capitalize;
+}
+
+.searchTeacher .headsearch .searchhead {
+    text-align: center;
+    background-color: #1cba98;
+    padding: 40px 0;
+    display: block;
+    width: 100%;
+}
+
+.searchTeacher .headsearch .searchhead input {
+    color: #fff;
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem 1rem 1rem 2.8rem;
+    background-color: rgba(56, 49, 68, .2);
+    transition: all .25s linear;
+    font-family: Pluto Sans, Helvetica, Arial, sans-serif;
+}
+
+.searchTeacher .headsearch .searchhead input::placeholder {
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.searchTeacher .headsearch .searchhead .filter {
+    display: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    padding-right: 35px;
+    padding-top: 12px;
+    background-color: rgba(56, 49, 68, .2);
+    transition: all .25s linear;
+    font-family: Pluto Sans, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+@media (min-width:992px) {
+    .searchTeacher .headsearch .searchhead {
+        display: block !important;
+    }
+}
+
+@media (max-width:991.5px) {
+    .searchTeacher .headsearch .searchhead input {
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+    .searchTeacher .headsearch .searchhead {
+        padding-bottom: 0% !important;
+        text-align: left;
+        display: flex;
+    }
+    .searchTeacher .headsearch .searchhead .filter {
+        display: inline-block;
+    }
+}
+
+
+/*----------------------------------------------------------endhead-----------------------------------------------------*/
+
+
+/*----------------------------------------------------------startbody---------------------------------------------------*/
+
+.searchTeacher .bodysearch .container-fluid,
+.searchTeacher .bodysearch .container-fluid .row,
+.searchTeacher .bodysearch .container-fluid .row .col-lg-3 {
+    margin: 0;
+    padding: 0;
+}
+
+.searchTeacher .bodysearch .container-fluid .drop {
+    background-color: #fff;
+    transform: translateY(-80px);
+    margin: 0%;
+    height: 100vh;
+    position: fixed;
+}
+
+.dropover {
+    height: 0px;
+}
+
+.searchTeacher .bodysearch .container-fluid .drop .time {
+    padding: 20px 10px 35px;
+    font-family: Pluto Sans, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    border-bottom: 1.5px solid #ccc;
+    display: flex;
+}
+
+.searchTeacher .bodysearch .container-fluid .drop .time .col-2 {
+    padding: 0px;
+    float: right;
+}
+
+.searchTeacher .bodysearch .container-fluid .drop .time .col-2 img {
+    float: right;
+}
+
+.searchTeacher .bodysearch .container-fluid .drop .time h6 {
+    font-size: 16px;
+    font-weight: 550;
+    margin-bottom: 0;
+    color: #4d4d4d;
+    font-family: Pluto Sans, Helvetica, Arial, sans-serif;
+}
+
+.searchTeacher .bodysearch .container-fluid .drop .time span {
+    font-size: 13.5px;
+    font-weight: 550;
+    color: #1cba98;
+    padding-right: 5px;
+    font-family: Pluto Sans, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width:991.5px) {
+    .searchTeacher .bodysearch .container-fluid .drop {
+        display: none;
+    }
+}
+
+@media (min-width:992px) {
+    .searchTeacher .bodysearch .container-fluid .drop {
+        display: block !important;
+    }
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    z-index: 0;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform h5 {
+    margin: 40px 0 20px;
+    color: #928e98;
+    font-weight: 650;
+    font-size: 1rem;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+@media (max-width:991.5px) {
+    .searchTeacher .bodysearch .container-fluid .teacherinform {
+        width: 100%;
+        max-width: none;
+    }
+    .searchTeacher .bodysearch .container-fluid .teacherinform h5 {
+        margin: 15px auto;
+        text-align: center;
+    }
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .col-md-7 {
+    display: flex;
+    padding: 0;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .img img {
+    width: 80px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first a {
+    text-decoration: none;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .data {
+    margin-left: 10px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .data .nameperson {
+    color: #383144;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .data .carr {
+    color: rgba(56, 49, 68, .5);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .conect {
+    float: right;
+}
+
+@media (max-width:767.5px) {
+    .searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .conect {
+        float: left;
+        margin: 10px 0px;
+    }
+    .searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .col-md-5 {
+        padding: 0;
+    }
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .conect a {
+    color: #1cba98;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .first .conect .view {
+    margin: 0 20px 0 50px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .col-lg-6,
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .col-lg-5 {
+    padding: 0;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .col-lg-6 {
+    margin-right: 40px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second h4 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #383144;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second p {
+    line-height: 18px;
+    font-family: Abril Text, Droid Serif, serif;
+    margin-bottom: 5px;
+    color: #383144;
+    font-size: 16px;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second h6 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #383144;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .ticket {
+    display: flex;
+    padding: 16px;
+    padding-right: 0px;
+    margin: 20px 0px;
+    max-width: 300px;
+    border: 1px solid rgba(56, 49, 68, .1);
+    border-radius: .1rem;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .ticket .price span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #383144;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .ticket .request a {
+    padding: 5px 15px 7px;
+    background-color: #ff530f;
+    border-radius: 2rem;
+    border: 2px solid #ff530f;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 500;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .ticket .request a:hover {
+    background-color: #fff;
+    color: #ff530f;
+}
+
+.searchTeacher .bodysearch .container-fluid .teacherinform .inform .second .ticket .request {
+    margin-top: 10px;
+}

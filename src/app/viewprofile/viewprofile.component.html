@@ -1,0 +1,73 @@
+<section class="viewprofile">
+    <div class="headview">
+        <nav id="nav">
+            <a [routerLink]="['/header']" class="left">TeachMe</a>
+            <a [routerLink]="['/signin']" class="right">Sign In</a>
+        </nav>
+    </div>
+    <div class="headview2"></div>
+    <div class="bodyview">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 left">
+                    <img class='profile' src="../../src/app/viewprofile/viewprofile.PNG">
+                    <h5>{{Name}}</h5>
+                    <h6>JavaScript, Chess, and Guitar Teacher based in San Francisco, CA</h6>
+                    <img class='star' src="../../src/app/img/star.png"><br>
+                    <button class='Question'>Ask a Question</button>
+                </div>
+                <div class="col-md-3 left2"></div>
+                <div class="col-md-9 right">
+                    <div class="top">
+                        <h6 class="headtop">100% Satisfaction Guarantee</h6>
+                        <h3>Get custom, 1-on-1 coaching from <span class="name">Zachary</span> over live video chat.</h3>
+                        <div class="center">
+                            <div class="headcenter">
+                                <h5 class="lefthead">Lesson</h5>
+                                <img class="righthead a1" (click)='veiw()' id='arow' src="../../src/app/img/arow.PNG">
+                            </div>
+                            <div class="bodycenter" id="bodycenter">
+                                <div class="leftbody">
+                                    <span>25 Minutes   $20</span><br>
+                                    <span>55 Minutes   $40</span><br>
+                                </div>
+                                <div class="rightbody">
+                                    <button>Request a Time</button>
+                                </div>
+                            </div>
+                            <div class="footercenter" id="footercenter">
+                                <p>JavaScript is the glue of the web. Glue can be messy but there are ways to keep your hands clean. Libraries like jQuery, Angular, and React can be real time-savers and they are all very well documented and easy to learn.
+                                    Knowing a bit of HTML and CSS is helpful. When you contact me please provide some details as to your experience level and what you're looking to accomplish and we can get started.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h6 class="about">about <span class="name">zachery</span></h6>
+                        <div class="info">
+                            <p>
+                                Zach has been programming for 15 years, since he was a teenager. He we was in the right place at the right time for the tech revolution that lead to social media and other pillars of the modern web. He's a very patient instructor and tries to get his
+                                students to lead their own studies and come to him when they are truly stumped.<br><br> He started playing classical guitar when he was 12 years old and can still play the very first songs
+                                he learned from memory.<br><br> When he's not programming or playing guitar, he's playing chess, a way for him to focus his attention away from the rest of world.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="final">
+                        <div class="one">Review</div>
+                        <div class="two">
+                            <h6>Daniel A</h6>
+                            <span>num Lessons</span>
+                        </div>
+                        <div class="three">
+                            <h6>rob m</h6>
+                            <span>num Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>

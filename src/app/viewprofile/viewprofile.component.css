@@ -1,0 +1,215 @@
+.viewprofile {
+    position: relative;
+}
+
+.viewprofile .headview {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.viewprofile .headview2 {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+}
+
+.viewprofile .headview nav .left {
+    float: left;
+    color: #1cba98;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.viewprofile .headview nav .right {
+    float: right;
+    color: #d4d1d1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.viewprofile .bodyview {
+    position: relative;
+}
+
+.viewprofile .bodyview .left {
+    padding: 0%;
+    position: fixed;
+    text-align: center;
+}
+
+@media (max-width:767.5px) {
+    .viewprofile .bodyview .left {
+        position: relative;
+    }
+}
+
+.viewprofile .bodyview .left2 {
+    height: 100%;
+}
+
+.viewprofile .bodyview .left .profile {
+    width: 100%;
+}
+
+.viewprofile .bodyview .left h5 {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+.viewprofile .bodyview .left h6 {
+    padding: 0 20px;
+    font-size: 16px;
+    color: rgb(129, 127, 127);
+    margin-bottom: 20px;
+}
+
+.viewprofile .bodyview .left .star {
+    margin-bottom: 30px;
+}
+
+.viewprofile .bodyview .left .Question {
+    background: none;
+    padding: 6px 20px;
+    border: 2px solid #1cba98;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.viewprofile .bodyview .left .Question:hover {
+    background-color: #1cba98;
+}
+
+.viewprofile .bodyview .right {
+    padding: 0%;
+}
+
+.viewprofile .bodyview .right .top {
+    background-color: #1cba98;
+    padding: 30px 30px 15px;
+}
+
+.viewprofile .bodyview .right .top .headtop {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.viewprofile .bodyview .right .top h3 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.viewprofile .bodyview .right .top .center {
+    background-color: #fff;
+    padding: 20px 20px 10px;
+}
+
+.viewprofile .bodyview .right .top .center .headcenter {
+    width: 100%;
+    min-height: 50px;
+    display: block;
+}
+
+.viewprofile .bodyview .right .top .center .headcenter .lefthead {
+    float: left;
+}
+
+.viewprofile .bodyview .right .top .center .headcenter .righthead {
+    float: right;
+    cursor: pointer;
+}
+
+.viewprofile .bodyview .right .top .center .bodycenter {
+    width: 100%;
+    padding: 0px 15px 15px;
+    border: 1px solid #d4d1d1;
+    height: auto;
+    display: block;
+    min-height: 70px;
+    max-height: 150px;
+}
+
+.viewprofile .bodyview .right .top .center .bodycenter .leftbody {
+    float: left;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3f3f3f;
+}
+
+.viewprofile .bodyview .right .top .center .bodycenter .rightbody {
+    float: right;
+    margin-top: 17px;
+}
+
+.viewprofile .bodyview .right .top .center .bodycenter .rightbody button {
+    background: none;
+    background-color: #ff530f;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: 2px solid #ff530f;
+    cursor: pointer;
+}
+
+.viewprofile .bodyview .right .top .center .bodycenter .rightbody button:hover {
+    background-color: #fff;
+    color: #ff530f;
+}
+
+.viewprofile .bodyview .right .top .center .footercenter {
+    margin-top: 20px;
+}
+
+.viewprofile .bodyview .right .bottom {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.viewprofile .bodyview .right .bottom .about {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #a1a1a1;
+}
+
+.viewprofile .bodyview .right .bottom p {
+    font-size: 16px;
+    font-weight: 470px;
+    color: #272727;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.viewprofile .bodyview .right .final .one {
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 1px solid #d4d1d1;
+}
+
+.viewprofile .bodyview .right .final .two,
+.viewprofile .bodyview .right .final .three {
+    padding: 40px 20px 30px;
+    border-bottom: 1px solid #d4d1d1;
+}
+
+.viewprofile .bodyview .right .final .two h6,
+.viewprofile .bodyview .right .final .three h6 {
+    line-height: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.viewprofile .bodyview .right .final .two span,
+.viewprofile .bodyview .right .final .three span {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: #aaaaaa;
+}

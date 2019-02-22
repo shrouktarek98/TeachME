@@ -1,0 +1,62 @@
+<div class="first">
+    <div class="container">
+        <a href="#" class="teachme">TeachMe</a>
+        <p>Create your TeachMe account</p>
+    </div>
+</div>
+
+<form #formdata="ngForm" (ngSubmit)="onClickSubmit(formdata.value)">
+    <div class="details">
+        <div class="container">
+            <div class="inpt">
+                <div>
+                    <input #fname="ngModel" name="firstName" [(ngModel)]="firstName" type="text" class="form-control" placeholder="First Name" required>
+                    <div class="alert alert-danger" *ngIf="fname.touched && fname.invalid">
+                        <div *ngIf="fname.errors.required">FirstName is required.</div>
+                    </div>
+                </div>
+
+                <div>
+                    <input #lname="ngModel" name="lastName" [(ngModel)]="lastName" type="text" class="form-control" placeholder="Last Name" required>
+                    <div class="alert alert-danger" *ngIf="lname.touched && lname.invalid">
+                        <div *ngIf="lname.errors.required">Last name is required.</div>
+                    </div>
+                </div>
+                <div>
+                    <input #Email="ngModel" name="email" [(ngModel)]="email" type="email" class="form-control" placeholder="Email" required>
+                    <div class="alert alert-danger" *ngIf="Email.touched && Email.invalid">
+                        <div *ngIf="Email.errors.required">Email is required.</div>
+                    </div>
+                </div>
+                <div>
+                    <input #Password="ngModel" name="password" [(ngModel)]="password" type="password" class="form-control" placeholder="Password" required>
+                    <div class="alert alert-danger" *ngIf="Password.touched && Password.invalid">
+                        <div *ngIf="Password.errors.required">Password is required.</div>
+                    </div>
+                </div>
+
+                <div>
+                    <input #cpassword="ngModel" name="confirmPassword" [(ngModel)]="confirmPassword" type="password" class="form-control" placeholder="Comfirm Password" required>
+                    <div class="alert alert-danger" *ngIf="cpassword.touched && cpassword.invalid">
+                        <div *ngIf="cpassword.errors.required">Confirm Password is required.</div>
+                    </div>
+                </div>
+
+                <div class="form-group divbttnsignin">
+                    <button class="btn btn-primary bttnsignin" type="submit" [disabled]="!formdata.valid">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="ftr">
+    <div class="container">
+        <a [routerLink]="['/signin']" class="signin" id='signin'>Sign In</a>
+        <!--   <a href="#">Forgot Your Password</a> -->
+    </div>
+</div>
+<div class="lst">
+    <div class="container">
+
+    </div>
+</div>

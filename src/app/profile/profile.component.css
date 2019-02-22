@@ -1,0 +1,125 @@
+/*Starting of first div*/
+
+.first
+{
+    height : 50px;
+    background-color: #FFF;
+}
+
+.container
+{
+    width:750px;
+    margin: auto; 
+}
+.teachme
+{
+    text-decoration: none;
+    color: #1CBA98; 
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    height: 5px;
+}
+/*End of first div*/
+.frst
+{
+    font-size: 20px;
+    border: 5px;
+    background-color: #FFF;
+    font-style: normal;
+    border-top: 0.5px solid #EAEAEC;
+    padding: 10px;
+    height: 15px;
+}
+.data
+{
+    background-color: #F5F5F6;
+    margin: 20px;
+}
+.info
+{
+    background-color: #FFF;
+    text-indent: 20px;
+    margin-top: auto;
+    padding: 20px;
+    border-color: #000;
+    border :5px;
+    font-size: 18px;
+    border: 0.5px solid #EAEAEC;
+
+}
+.details
+{
+    background-color: #F4FCFB;
+    text-indent: 20px;
+    height: auto;
+}
+.details input
+{
+    display: block;
+}
+.call
+{
+    font-size: 18px;
+    color: grey;
+    padding: 10px;
+}
+.txtbx
+{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
+    height: 5px;
+    font-size: 17px;
+   font-weight: 100;
+    font-style: italic;
+    width : 650px;    
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.btnsv
+{
+    color: #1CBA98;
+    border-color:#1CBA98;
+    background-color: white;
+    width: 140px;
+    height: 55px;
+    font-size: 20px;
+    border: 2px solid #1CBA98 ;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 30px;
+    outline-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btncn
+{
+    color: #1CBA98;
+    border-color:transparent;
+    background-color: transparent;
+    width: 140px;
+    height: 55px;
+    font-size: 20px;
+    border: 2px solid transparent ;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 30px;
+    outline-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lst
+{
+    background-color: #383144;
+    height: 70px;
+    margin-top: 350px;
+    margin-bottom: 0%;
+    width: 100%;
+}
